@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD OPERATION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <h4>Employee Details</h4>
+        <div class="container">
+
+            <div class="box1">
+                <div class="image">
+                    <img src="dummy.jpg" id="showImg" alt="dummy">
+                    <div>
+                        <input type="file" id="user-image" accept="image/*">
+                        <p style="margin-left: 10px;">Invalid Image</p>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <div>
+                        <input type="text" id="name" placeholder="Enter a Name *">
+                        <p>Enter a valid name(2-4 characters).</p>
+                    </div>
+                    <div>
+                        <input type="text" maxlength="10" id="pno" placeholder="Personal Number *">
+                        <p>Enter a valid 10-digit mobile number.</p>
+                    </div>
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="Email *">
+                        <p>Enter a valid email address</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="box2">
+                <div class="top-container">
+                    <div class="input-container">
+                        <div class="designation">
+                            <input type="text" id="designation" placeholder="Designation *">
+                            <p>Select the Designation</p>
+                        </div>
+                        <div>
+                            <select name="country" id="country">
+                                <option value="" disabled selected>Select Country *</option>
+                            </select>
+                            <p>Select the Country</p>
+                        </div>
+                        <div>
+                            <input type="text" maxlength="6" id="pinno" placeholder="Pin Code *">
+                            <p>Enter a valid 6-digit pin code</p>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <div>
+                            <select name="company" id="company">
+                                <option value="" disabled selected>Select a Company *</option>
+                                <option value="tcs">TCS</option>
+                                <option value="zoho">Zoho</option>
+                                <option value="vhitech">Vhitech</option>
+                            </select>
+                            <p>Select the Company</p>
+                        </div>
+                        <div>
+                            <select name="state" id="state">
+                                <option value="" disabled selected>Select State</option>
+                            </select>
+                            <p>Select the State</p>
+                        </div>
+
+                        <div>
+                            <textarea name="address" id="address" placeholder="Address"
+                                style="resize: none;"></textarea>
+                            <p>Enter a address</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-container">
+                    <button id="register">Register</button>
+                    <button id="resetbtn">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="user-details">
+        <h5 id="no-table-found">No Users Found. Please Register a User</h5>
+        <table id="tableTag">
+            <tr>
+                <th>User Profile</th>
+                <th>User Name</th>
+                <th>Designation
+                <th>Company Name</th>
+                <th>Mobile Number</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
